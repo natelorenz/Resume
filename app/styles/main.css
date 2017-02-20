@@ -1,0 +1,73 @@
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+#about p{
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+.button-collapse {
+  color: #fff;
+}
+
+.caption {
+  text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+}
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,1);
+  text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.slider .indicators .indicator-item.active{
+  background-color: #ffab91 !important;
+}
+footer.page-footer {
+  padding-bottom: 12px;
+  color: #78909c;
+}
+.break1{
+  padding-top: 25px;
+}
+.answer{
+  font-variant-caps: small-caps;
+}
+
+.setup{
+  box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,.2);
+  padding-top:25px;
+  padding-bottom: 25px;
+}
