@@ -8,19 +8,19 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="/bower_components/d3/d3.js"></script>
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
@@ -53,8 +53,20 @@
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
-          <div class="row center">
-                <h3 class="header col s12 light">This is where the D3 Goes</h3>
+          <div class="row center myData">
+            <script type="text/javascript">
+            var dataset = [ 80, 80, 55, 60];
+
+            d3.select(".myData").selectAll("div")
+              .data(dataset)
+              .enter()
+              .append("div")
+              .attr("class", "bar")
+              .style("height", function(d) {
+                    var barHeight = d * 4;
+                    return barHeight + "px";
+                });
+        </script>
           </div>
         </div>
       </div>
